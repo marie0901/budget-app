@@ -33,13 +33,11 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const mapStateToProps = (state, props) => {
-const selectedAccount = state.accounts.find((account) => account.id === state.filter.accountId);
-
-
-return(
-  {
-  account: selectedAccount
-})
+  const selectedAccount = state.accounts.find((account) => account.id === state.filter.accountId);
+  return(
+    {
+    account: selectedAccount
+    })
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AccountDetail);

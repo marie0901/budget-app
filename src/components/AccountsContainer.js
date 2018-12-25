@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import AccountList from './AccountList';
-import AccountDetail from './AccountDetail';
-import AccountNew from './AccountNew';
+import AccountsTable from './AccountsTable';
+
 
 class AccountsContainer extends Component {
   render() {
     return (
       <div>
-        <h2>HELLO Accounts</h2>
-        <AccountList />
-        <AccountDetail />
-        <AccountNew />
-
+        <h2>HELLO Accounts sssssssssssssss</h2>
+        <AccountsTable />
       </div>
     );
   }
