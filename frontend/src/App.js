@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import configureStore from './store';
+
+
 import './App.css';
 import {
   Route,
@@ -35,7 +35,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 
 
 
-const store = configureStore();
+
 
 class App extends Component {
 
@@ -51,12 +51,12 @@ class App extends Component {
     this.setState({ open: false });
   };
 
+
   render() {
     const { classes } = this.props;
 
 
     return (
-      <Provider store={store}>
         <HashRouter>
 
         <div className={classes.root}>
@@ -124,7 +124,6 @@ class App extends Component {
         </div>
 
         </HashRouter>
-      </Provider>
     );
   }
 }

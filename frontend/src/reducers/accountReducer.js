@@ -12,6 +12,8 @@ export default (state = accountReducerDefaultState, action) => {
           id: uniqid()
         }
       ];
+    case 'SET_ACCOUNTS':
+      return action.accounts;
     case 'DELETE_ACCOUNT':
       return state.filter(({ id }) => id !== action.accountId);
     case 'UPDATE_ACCOUNT':
